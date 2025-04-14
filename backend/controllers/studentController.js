@@ -22,7 +22,7 @@ const updateStudent = (req, res) => {
 
 const deleteStudent = (req, res) => {
     students = students.filter(s => s.id !== req.params.id);
-    res.status(200).json({ message: "Student deleted" });
+    res.status(200).json({ message: "Student is deleted" });
 };
 
 module.exports = { getStudents, addStudent, updateStudent, deleteStudent };
